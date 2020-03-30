@@ -1,6 +1,7 @@
 {
-  "name": "spa-web",
-  "version": "0.1.0",
+  "name": "reactjs-structure-web",
+  "version": "1.0.0",
+  "author": "Glênio Carvalho <gleniohenrique-carvalho@hotmail.com>",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
