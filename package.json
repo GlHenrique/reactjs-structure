@@ -5,7 +5,11 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "start-prod": "env-cmd -f .env npm run start",
+    "start-staging": "env-cmd -f .env.staging npm run start",
     "build": "react-scripts build",
+    "build-staging": "env-cmd -f .env.staging react-scripts build",
+    "build-dev": "env-cmd -f .env.development react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src"
@@ -15,6 +19,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "env-cmd": "^10.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^5.2.0",
